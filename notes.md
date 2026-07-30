@@ -406,3 +406,100 @@
 ### Summary
 
 ![alt text](./notes_artifacts/images/day_3_summary.png)
+
+## Day 4 Session
+
+### Module 13 - Introduction to Copilot Spaces
+
+#### Creating your first space
+
+* To create a space, go to https://github.com/copilot/spaces and create a space
+* A GitHub space is a container in which you can have an interaction in copilot that is isolated from everything else going on.
+    * You can attach things to that space that is relevant for copilot to use
+    * Think of it like a meeting room for GitHub Copilot - a private session where no extraneous details are allowed in.
+* We create a tightly focused copilot experience that will not pull in things from outside the space.
+    * Prevents confusion with reasoning process with extraneous files, data, etc.
+    * We prevent Copilot from accessing the web as well
+* Once you've created the space, you can share this space with colleagues
+    * Collectively you can asynchronously push forward the processes and objectives in that space
+
+#### DEMO - GITHUB SPACES
+
+* You provide instructions to define copilot's role, focus and what to avoid in the space
+* Think of a space where you want to collaboratively work on a big design change with multiple individuals - we can tell the space that it is a software architect versed in design patterns and modern architecture practices, and that we are in the process of overhauling our existing software architecture.
+    * We can add multiple sources like files, other repositories, links, etc.
+* You can associate a repository to a space, give instructions to the agent to indicate that its role is to create pull request, provide a prompt to indicate what changes you want it to make, and then have it initiate a pull request to your original repository
+    * You can bust out of your space by having copilot initiate an agent to perform a pull request to persist your work into the repository.
+
+#### Sharing, Discoverability, and Governance
+
+* Visibility and sharing
+    * set visibility of space according to how broadly you intend others to use it
+    * share space by link
+* Security and access
+    * follows GitHub's existing permissions
+    * space does not grant new access, it only surfaces content that viewers are already entitled to see.
+* Versioning and freshness
+    * stay fresh by referencing live GitHub sources
+    * Linked files reflect repo's default branch and attached issues, pull requests evolve as they change, reducing the need to copy content into separate docs
+* Governance
+    * Assign an owner, add a short "how to use this space" note at the top of the instructions
+    * Establish naming convensions and review cadence to prune stale soruces and keep instructions aligned with reality
+    * When space grows beyond single job, split into smaller Spaces
+
+#### Do's and Don'ts of Working in a Space
+
+ ![alt text](./notes_artifacts/images/do_dont_spaces.png)
+
+### Module 14 - Levelling up code reviews and pul requests with GitHub Copilot
+
+#### DEMO - VS CODE AGENTS
+
+* You can build a tailored agent for a particular project you a working on
+    * You won't be wasting tokens helping a general purpose agent get to teh right answer
+* You can build a custom agent inside VS Code - it opens a chat window in which you can introduce new capabilities.
+    * you can keep the agent to your own workspace, or you can push the agent into your repository within the .github folder
+
+    ![alt text](./notes_artifacts/images/vscode_custom_agent.png)
+
+#### What GitHub Adds to Review Process
+
+* You can use Copilot to augment the code in your repository, then ask Copilot to create a pull request, then ask Copilot to analyze the pull request (with possible human review), then you are done.
+* Once you have your pull request, you add Copilot to the reviewers, which will analyze your code and identify any blockers that prevent the acceptance of the pull request
+* We can create a file called copilot-instruction.md, which we add into a specific location in our GitHub repository, that Copilot will pick up whenever it does anything within that repository.
+    * For individual it is at the repo level
+    * For organizations / enterprises, you can set them consistently across repositories
+        * We get the ability to set global standards across our organization
+        * Helps create coding standards for example.
+    * In plain English, you can specify several instructions to your Copilot agent
+
+    ![alt text](./notes_artifacts/images/copilot_instructions.png)
+
+#### GitHub Copilot Instructions
+
+* In the .github folder, you can create a new folder called "instructions", within which you can create various markdown files indicating different instruction files
+    * You can put in extra instructions and apply filters to specify which files the instructions should target
+
+    ![alt text](./notes_artifacts/images/copilot_additional_instruction.png)
+
+* Github Custom Instructions Repository
+
+    * Instructions Repo - https://docs.github.com/en/copilot/tutorials/customization-library/custom-instructions
+
+### Module 15 - Using GitHub Copilot with Javascript
+
+![alt text](./notes_artifacts/images/gh_copilot_javascript.png)
+
+### DEMO - COPILOT IN JAVASCRIPT
+
+* You can ask GitHub Copilot within VS Code to explain javascript code within a js file.
+* You can accept in line suggestions while you edit your JS code
+* We can ask the agent to create tests for us as well
+
+### Module 16 - Using GitHub Copilot with Python
+
+![alt text](./notes_artifacts/images/gh_copilot_python.png)
+
+### Day 4 Homework
+
+![alt text](./notes_artifacts/images/day_4_homework.png)
