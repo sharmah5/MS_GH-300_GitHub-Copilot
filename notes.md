@@ -503,3 +503,10 @@
 ### Day 4 Homework
 
 ![alt text](./notes_artifacts/images/day_4_homework.png)
+
+## Day 5 Session
+
+### GirHub Practice Exam Site
+
+* https://ghcertified.com/en/practice-tests
+* GitHub Exam Prep - https://onedrive.live.com/?id=534230C9D7A90B1B%21sbcd1ace801f547dca63742a2f0a97288&cid=534230C9D7A90B1B&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy81MzQyMzBjOWQ3YTkwYjFiL0V1aXMwYnoxQWR4SHBqZENvdkNwY29nQmF6ME1XTVdCWmZoM29qNzVlbmVqRlE%5FZT1PaVRUMlA
